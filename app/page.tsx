@@ -74,9 +74,8 @@ export default function HomePage() {
               Dostupni 0–24h — brza intervencija
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Profesionalno{' '}
-              <span className="text-brand-300">isušivanje vlage</span>{' '}
-              Trotec mašinama
+              <span className="text-brand-300">Isušivanje vlage</span>{' '}
+              profesionalnim mašinama
             </h1>
             <p className="text-lg sm:text-xl text-brand-200 leading-relaxed mb-8 max-w-2xl">
               Poplava, curenje, kondenzacija — reagujemo brzo i efikasno. Industrijska oprema,
