@@ -271,14 +271,8 @@ export default function HomePage() {
             <div>
               <p className="text-cyan-400 text-xs font-bold uppercase tracking-widest mb-3">Naše usluge</p>
               <h2 className="text-3xl sm:text-4xl font-black text-white">
-                Rešavamo problem vlage<br />na izvoru
+                Rešavamo problem vlage
               </h2>
-            </div>
-            <div className="flex items-center">
-              <p className="text-brand-300 leading-relaxed">
-                Svaki slučaj vlage je drugačiji — bilo da se radi iz podova, podovima ili
-                tokom poplava — imamo rešenje i opremu da se bori svaki problem efikasno i trajno.
-              </p>
             </div>
           </div>
 
