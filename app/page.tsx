@@ -161,7 +161,7 @@ export default function HomePage() {
             </div>
 
             <div className="mt-6 inline-block bg-white text-black text-xs font-black uppercase tracking-widest px-6 py-2 rounded-sm">
-              Naša vrhunska Trotek flota
+              Naše profesionalne industrijske Trotec mašine
             </div>
           </div>
         </div>
