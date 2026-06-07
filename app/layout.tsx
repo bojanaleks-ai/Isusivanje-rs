@@ -67,8 +67,8 @@ const localBusinessSchema = {
   name: 'Isusivanje.rs',
   description: 'Profesionalno isušivanje vlage i sanacija šteta od vode širom Srbije.',
   url: 'https://isusivanje.rs',
-  telephone: '+381601234567',
-  email: 'info@isusivanje.rs',
+  telephone: '+381623553456',
+  email: 'isusivanje.rs@gmail.com',
   address: {
     '@type': 'PostalAddress',
     addressCountry: 'RS',

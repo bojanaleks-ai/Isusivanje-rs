@@ -99,7 +99,7 @@ export default async function BlogPostPage({ params }: Props) {
             <Link href="/blog" className="text-brand-600 font-semibold hover:text-brand-800 transition-colors">
               ← Svi blog postovi
             </Link>
-            <a href="tel:+381601234567" className="btn-primary">
+            <a href="tel:+381623553456" className="btn-primary">
               📞 Pozovite nas
             </a>
           </div>
@@ -112,7 +112,7 @@ export default async function BlogPostPage({ params }: Props) {
           <h2 className="text-2xl font-bold text-brand-900 mb-3">Prepoznajete problem koji smo opisali?</h2>
           <p className="text-brand-600 mb-6">Kontaktirajte nas — naš tim je dostupan 24/7.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+381601234567" className="btn-primary">📞 Pozovite odmah</a>
+            <a href="tel:+381623553456" className="btn-primary">📞 Pozovite odmah</a>
             <Link href="/kontakt" className="btn-outline">Pošaljite upit</Link>
           </div>
         </div>

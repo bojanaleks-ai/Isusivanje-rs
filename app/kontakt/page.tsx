@@ -12,14 +12,14 @@ const kontaktInfo = [
     title: 'Telefon',
     lines: ['+381 60 123 4567'],
     note: 'Dostupni 0–24h, 7 dana u nedelji',
-    href: 'tel:+381601234567',
+    href: 'tel:+381623553456',
   },
   {
     icon: '✉️',
     title: 'Email',
-    lines: ['info@isusivanje.rs'],
+    lines: ['isusivanje.rs@gmail.com'],
     note: 'Odgovaramo u roku od 2 sata',
-    href: 'mailto:info@isusivanje.rs',
+    href: 'mailto:isusivanje.rs@gmail.com',
   },
   {
     icon: '📍',
@@ -115,7 +115,7 @@ export default function KontaktPage() {
               Poplava ili curenje vode ne čeka. Pozovite nas odmah — naš tim stiže u roku od 2 sata.
             </p>
             <a
-              href="tel:+381601234567"
+              href="tel:+381623553456"
               className="inline-flex items-center gap-3 bg-white text-brand-900 font-bold text-xl px-8 py-4 rounded-xl shadow-lg hover:bg-brand-50 transition-colors"
             >
               📞 +381 60 123 4567

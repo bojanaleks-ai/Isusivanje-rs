@@ -42,7 +42,6 @@ export default function BlogPage() {
               >
                 {/* Placeholder header */}
                 <div className="h-44 bg-gradient-to-br from-brand-800 to-brand-600 flex items-center justify-center">
-                  <span className="text-5xl">💧</span>
                 </div>
                 <div className="flex flex-col flex-1 p-6">
                   {/* Tags */}
@@ -88,7 +87,7 @@ export default function BlogPage() {
           <h2 className="text-2xl font-bold text-brand-900 mb-3">Imate pitanje ili hitnu situaciju?</h2>
           <p className="text-brand-600 mb-6">Naš tim je dostupan 24/7 — pozovite odmah ili pošaljite upit.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+381601234567" className="btn-primary">📞 Pozovite nas</a>
+            <a href="tel:+381623553456" className="btn-primary">📞 Pozovite nas</a>
             <Link href="/kontakt" className="btn-outline">Pošaljite upit</Link>
           </div>
         </div>
