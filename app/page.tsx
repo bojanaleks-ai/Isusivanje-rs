@@ -72,12 +72,6 @@ const usluge = [
     img: '/images/usluga-poplava.jpg',
     icon: '🌊',
   },
-  {
-    title: 'Merenje vlage',
-    desc: 'Precizno merenje vlažnosti termokamerom i vlažnomerom. Dijagnostika i plan sanacije pre radova.',
-    img: '/images/usluga-merenje.jpg',
-    icon: '🔬',
-  },
 ]
 
 export default function HomePage() {
@@ -276,7 +270,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {usluge.map((u) => (
               <div key={u.title} className="group rounded-xl overflow-hidden bg-brand-800 border border-brand-700 hover:border-cyan-500 transition-all duration-300">
                 {/* Photo area */}
