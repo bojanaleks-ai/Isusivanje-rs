@@ -106,9 +106,6 @@ export default function HomePage() {
               <p className="text-xl sm:text-2xl font-semibold text-brand-200 mb-4">
                 Brzo, Efikasno, Pouzdano
               </p>
-              <p className="text-lg sm:text-xl font-black uppercase tracking-wider text-accent-500 mb-6">
-                Bojan Aleksić gazda
-              </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="tel:+381623553456"
