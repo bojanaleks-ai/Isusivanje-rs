@@ -31,10 +31,6 @@ const koraci = [
     naslov: 'Isušivanje',
     opis: 'Postavljamo Trotec odvlaživače koji rade 24h bez prekida i redovno pratimo napredak sušenja.',
   },
-  {
-    naslov: 'Kontrolno merenje',
-    opis: 'Na kraju ponovo merimo vlagu i mašine odnosimo tek kada je prostor zaista suv.',
-  },
 ]
 
 const zastoMi = [
@@ -52,11 +48,6 @@ const zastoMi = [
     icon: '⚡',
     naslov: 'Brza reakcija',
     opis: 'Kod poplava i pucanja cevi svaki sat je bitan. Zato smo dostupni 0–24h, svakog dana.',
-  },
-  {
-    icon: '📏',
-    naslov: 'Merenje pre i posle',
-    opis: 'Ne nagađamo. Stanje merimo na početku i na kraju, pa tačno znate šta je urađeno.',
   },
 ]
 
@@ -116,8 +107,7 @@ export default function ONamaPage() {
                 stanova posle pucanja cevi, do hala i novogradnje kojima treba brzo sušenje estriha.
               </p>
               <p>
-                Ono što se nije promenilo je način na koji radimo: dolazimo kad smo dogovorili,
-                merimo pre nego što počnemo i odlazimo tek kada je posao zaista završen.
+                Ono što se nije promenilo je način na koji radimo: dolazimo kad smo dogovorili.
               </p>
             </div>
           </div>
@@ -137,8 +127,8 @@ export default function ONamaPage() {
       <section className="bg-brand-800 py-16 sm:py-20 border-y border-brand-700">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="text-cyan-400 text-xs font-bold uppercase tracking-widest mb-3">Kako radimo</p>
-          <h2 className="text-3xl font-black text-white mb-10">Četiri koraka do suvog prostora</h2>
-          <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <h2 className="text-3xl font-black text-white mb-10">Tri koraka do suvog prostora</h2>
+          <ol className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {koraci.map((k, i) => (
               <li key={k.naslov} className="relative rounded-xl bg-brand-900 border border-brand-700 p-6">
                 <div className="w-10 h-10 rounded-full bg-cyan-400 text-black font-black flex items-center justify-center mb-4">
@@ -157,7 +147,7 @@ export default function ONamaPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="text-cyan-400 text-xs font-bold uppercase tracking-widest mb-3">Zašto baš mi</p>
           <h2 className="text-3xl font-black text-white mb-10">Na šta možete da računate</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {zastoMi.map((z) => (
               <div key={z.naslov} className="rounded-xl border border-brand-700 bg-brand-800 p-6 hover:border-cyan-500 transition-colors">
                 <div className="text-3xl mb-4" aria-hidden>{z.icon}</div>
