@@ -54,6 +54,10 @@ const faq = [
     q: 'Da li radite i sa osiguravajućim društvima?',
     a: 'Da — izdajemo detaljnu tehničku dokumentaciju i izveštaje o merenijma koji su potrebni za osiguravajuće zahteve.',
   },
+  {
+    q: 'Koja područja pokrivate?',
+    a: 'Pokrivamo celu Srbiju — dolazimo na teren gde god se nalazili.',
+  },
 ]
 
 export default function KontaktPage() {
