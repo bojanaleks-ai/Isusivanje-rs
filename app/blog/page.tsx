@@ -9,14 +9,6 @@ export const metadata: Metadata = {
     'Stručni saveti o isušivanju vlage, sanaciji šteta od poplave, uklanjanju buđi i zaštiti vaše nekretnine.',
 }
 
-function formatDate(dateStr: string) {
-  return new Date(dateStr).toLocaleDateString('sr-RS', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  })
-}
-
 export default function BlogPage() {
   const posts = getSortedPostsMeta()
 
@@ -77,9 +69,6 @@ export default function BlogPage() {
                     {post.excerpt}
                   </p>
                   <div className="flex items-center justify-between mt-auto pt-4 border-t border-brand-100">
-                    <time className="text-xs text-brand-400" dateTime={post.date}>
-                      {formatDate(post.date)}
-                    </time>
                     <Link
                       href={`/blog/${post.slug}`}
                       className="text-sm font-semibold text-brand-600 hover:text-brand-800 transition-colors"
