@@ -313,11 +313,10 @@ export default function HomePage() {
 
             <div className="flex flex-col gap-6">
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 {[
-                  { label: 'Više od', value: '500+', sub: 'intervencija' },
+                  { label: 'Više od', value: '1300+', sub: 'intervencija' },
                   { label: '', value: 'Besplatna', sub: 'procena' },
-                  { label: '', value: 'Garancija', sub: 'na radove' },
                 ].map((s) => (
                   <div key={s.sub} className="bg-brand-800 border border-brand-700 rounded-xl p-4 text-center">
                     {s.label && <p className="text-brand-400 text-xs">{s.label}</p>}
