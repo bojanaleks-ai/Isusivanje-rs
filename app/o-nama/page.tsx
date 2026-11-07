@@ -106,7 +106,9 @@ export default function ONamaPage() {
                 stanova posle pucanja cevi, do hala i novogradnje kojima treba brzo sušenje estriha.
               </p>
               <p>
-                Ono što se nije promenilo je način na koji radimo: dolazimo kad smo dogovorili.
+                Ono što se nije promenilo jeste naš pristup poslu: poštujemo dogovorene termine,
+                svaki objekat sagledavamo pojedinačno i o toku isušivanja vas redovno obaveštavamo —
+                od prvog poziva do završetka radova.
               </p>
             </div>
           </div>
