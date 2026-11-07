@@ -28,10 +28,6 @@ const sta = [
     naslov: 'Ravni krovovi i terase',
     opis: 'Lociramo zone u koje prodire voda, kako bi se sanacija uradila tačno na mestu problema.',
   },
-  {
-    naslov: 'Kontrola isušivanja',
-    opis: 'Tokom i posle isušivanja proveravamo da li je konstrukcija ravnomerno suva i da nije ostalo vlažnih zona.',
-  },
 ]
 
 const prednosti = [
