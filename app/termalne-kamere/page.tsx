@@ -97,7 +97,6 @@ const snimci: { naslov: string; opis: string; snimak: string; foto?: string }[] 
     naslov: 'Prozor — toplotni most',
     opis: 'Staklo je na 21 °C, a donja ivica okvira samo 16,6 °C. Na tim hladnim mestima se skuplja kondenz i nastaje buđ.',
     snimak: '/images/termo-prozor-snimak.jpg',
-    foto: '/images/termo-prozor-foto.jpg',
   },
   {
     naslov: 'Podno grejanje u kupatilu',
@@ -248,7 +247,7 @@ export default function TermalneKamerePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl font-black text-white mb-2">Snimci sa terena</h2>
           <p className="text-brand-300 mb-10 max-w-2xl">
-            Primeri snimaka našom Bosch GTC 400 C kamerom — u uglu je fotografija istog mesta.
+            Primeri snimaka našom Bosch GTC 400 C kamerom.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {snimci.map((s) => (
