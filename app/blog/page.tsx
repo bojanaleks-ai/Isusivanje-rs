@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { getSortedPostsMeta } from '@/lib/blog'
 
@@ -40,9 +41,21 @@ export default function BlogPage() {
                 key={post.slug}
                 className="group flex flex-col rounded-2xl border border-brand-100 overflow-hidden shadow-sm hover:shadow-lg hover:border-brand-300 transition-all duration-300"
               >
-                {/* Placeholder header */}
-                <div className="h-44 bg-gradient-to-br from-brand-800 to-brand-600 flex items-center justify-center">
-                </div>
+                {/* Slika / placeholder */}
+                {post.coverImage ? (
+                  <Link href={`/blog/${post.slug}`} className="relative h-44 block overflow-hidden">
+                    <Image
+                      src={post.coverImage}
+                      alt={post.title}
+                      fill
+                      sizes="(min-width: 1024px) 384px, (min-width: 768px) 50vw, 100vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </Link>
+                ) : (
+                  <div className="h-44 bg-gradient-to-br from-brand-800 to-brand-600 flex items-center justify-center">
+                  </div>
+                )}
                 <div className="flex flex-col flex-1 p-6">
                   {/* Tags */}
                   {post.tags && post.tags.length > 0 && (
