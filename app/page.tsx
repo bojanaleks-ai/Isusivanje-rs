@@ -69,7 +69,7 @@ const usluge = [
   },
   {
     title: 'Nakon poplave',
-    desc: 'Hitna intervencija 0-24h. Izvlačimo vodu iz prostora i radimo kompletnu sanaciju štete od poplave.',
+    desc: 'Hitna intervencija 0-24h. Izvlačimo vodu iz prostora.',
     img: '/images/usluga-poplava.jpg',
     icon: '🌊',
   },
