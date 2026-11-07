@@ -64,7 +64,7 @@ const usluge = [
   {
     title: 'Isušivanje podova',
     desc: 'Brzo i efikasno sušenje betonskih ploča, parketa i keramike. Vraćamo prostor u upotrebno stanje.',
-    img: '/images/usluga-podovi.jpg',
+    img: '/images/usluga-podovi-vlaga.jpg',
     icon: '🏠',
   },
   {
