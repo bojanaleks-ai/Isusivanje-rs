@@ -43,9 +43,7 @@ Trajanje procesa zavisi od nekoliko ključnih faktora:
 
 - **Stepen zasićenosti zida vodom** (da li je u pitanju dugogodišnja vlaga ili sveža poplava).
 - **Debljina i materijal zida** (betonski zidovi zadržavaju vlagu znatno duže od pregradnih gipsanih ploča).
-- **Temperatura u prostoriji** (optimalni uslovi za rad mašina su između 15 °C i 25 °C).
-
-U proseku, uz korišćenje profesionalnih mašina za isušivanje, zidovi se potpuno isušuju u roku od 7 do 14 dana.
+- **Temperatura u prostoriji** (optimalni uslovi za rad mašina su između 0 °C i 40 °C).
 
 ## Posledice ignorisanja vlage: opasnost po zdravlje i dom
 
