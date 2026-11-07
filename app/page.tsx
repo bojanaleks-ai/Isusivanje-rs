@@ -13,9 +13,6 @@ const trotekMasine = [
   { model: 'TTK 400', kapacitet: '80 L/dan', img: '/images/ttk400.jpg' },
   { model: 'TTK 500', kapacitet: '90 L/dan', img: '/images/ttk500.jpg' },
   { model: 'TTK 570 ECO', kapacitet: '127 L/dan', img: '/images/ttk570.jpg' },
-  { model: 'Turbo fan TFV 30 S', kapacitet: '2.250 m³/h', img: '/images/tfv30s.jpg' },
-  { model: 'Električni kalorifer TDS 20', kapacitet: '3,3 kW', img: '/images/tds20.jpg' },
-  { model: 'Produžni kabl', kapacitet: '20 m · 230 V', img: '/images/produzni-kabl.jpg' },
 ]
 
 const prednosti = [

@@ -7,7 +7,7 @@ import { useState } from 'react'
 const navLinks = [
   { href: '/', label: 'Početna' },
   { href: '/o-nama', label: 'O nama' },
-  { href: '/#trotek', label: 'Trotek oprema' },
+  { href: '/trotek-oprema', label: 'Trotek oprema' },
   { href: '/#usluge', label: 'Naše usluge' },
   { href: '/blog', label: 'Blog' },
   { href: '/kontakt', label: 'Kontakt' },
