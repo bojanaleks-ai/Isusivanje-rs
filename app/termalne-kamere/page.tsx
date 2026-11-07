@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -91,6 +92,26 @@ const preciznost = [
   },
 ]
 
+const snimci: { naslov: string; opis: string; snimak: string; foto?: string }[] = [
+  {
+    naslov: 'Prozor — toplotni most',
+    opis: 'Staklo je na 21 °C, a donja ivica okvira samo 16,6 °C. Na tim hladnim mestima se skuplja kondenz i nastaje buđ.',
+    snimak: '/images/termo-prozor-snimak.jpg',
+    foto: '/images/termo-prozor-foto.jpg',
+  },
+  {
+    naslov: 'Podno grejanje u kupatilu',
+    opis: 'Ispod pločica se jasno vidi trasa cevi podnog grejanja — bez ijednog otvaranja poda.',
+    snimak: '/images/termo-podno-grejanje-snimak.jpg',
+    foto: '/images/termo-kupatilo-foto.jpg',
+  },
+  {
+    naslov: 'Radijator ispod prozora',
+    opis: 'Radijator greje na 50,3 °C, dok je zid pored njega oko 17,6 °C — vidi se kako se toplota širi prostorijom.',
+    snimak: '/images/termo-radijator-snimak.jpg',
+  },
+]
+
 const prednosti = [
   'Bez razbijanja zidova i podova',
   'Brz pregled celog prostora',
@@ -124,18 +145,18 @@ export default function TermalneKamerePage() {
             </ul>
           </div>
 
-          {/* Ilustracija termalnog snimka */}
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-brand-700" aria-hidden="true">
-            <div className="absolute inset-0 bg-gradient-to-br from-yellow-300 via-orange-500 to-red-700" />
-            <div className="absolute -left-10 -bottom-10 w-3/4 h-3/4 rounded-full bg-gradient-to-tr from-indigo-900 via-blue-600 to-cyan-400 blur-2xl opacity-90" />
-            <div className="absolute left-1/4 bottom-1/4 w-1/3 h-1/3 rounded-full bg-indigo-950 blur-xl opacity-80" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-16 h-16 border-2 border-white/80 rounded-full" />
-              <div className="absolute w-24 h-px bg-white/80" />
-              <div className="absolute h-24 w-px bg-white/80" />
-            </div>
+          {/* Fotografija kamere na terenu */}
+          <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:ml-auto rounded-2xl overflow-hidden border border-brand-700">
+            <Image
+              src="/images/termo-kamera-radijator.jpg"
+              alt="Bosch GTC 400 C termalna kamera tokom snimanja radijatora"
+              fill
+              priority
+              sizes="(min-width: 1024px) 448px, 100vw"
+              className="object-cover object-center"
+            />
             <div className="absolute bottom-3 left-3 bg-black/60 text-white text-xs font-semibold px-3 py-1 rounded">
-              Plavo = hladnije, vlažnije · Crveno = toplije
+              Plavo = hladnije · Crveno = toplije
             </div>
           </div>
         </div>
@@ -222,8 +243,48 @@ export default function TermalneKamerePage() {
         </div>
       </section>
 
-      {/* Kako izgleda pregled */}
+      {/* Snimci sa terena */}
       <section className="bg-brand-800 border-y border-brand-700 py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-black text-white mb-2">Snimci sa terena</h2>
+          <p className="text-brand-300 mb-10 max-w-2xl">
+            Primeri snimaka našom Bosch GTC 400 C kamerom — u uglu je fotografija istog mesta.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {snimci.map((s) => (
+              <figure key={s.naslov} className="rounded-xl overflow-hidden border border-brand-700 bg-brand-900 flex flex-col">
+                <div className="relative aspect-[4/3] bg-black">
+                  <Image
+                    src={s.snimak}
+                    alt={`Termalni snimak: ${s.naslov}`}
+                    fill
+                    sizes="(min-width: 1024px) 400px, (min-width: 768px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                  {s.foto && (
+                    <div className="absolute top-3 left-3 w-1/3 aspect-[4/3] rounded-md overflow-hidden border-2 border-white shadow-lg">
+                      <Image
+                        src={s.foto}
+                        alt={`Fotografija: ${s.naslov}`}
+                        fill
+                        sizes="140px"
+                        className="object-cover"
+                      />
+                    </div>
+                  )}
+                </div>
+                <figcaption className="p-5">
+                  <h3 className="text-white font-bold text-lg mb-2">{s.naslov}</h3>
+                  <p className="text-brand-300 text-sm leading-relaxed">{s.opis}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Kako izgleda pregled */}
+      <section className="bg-brand-900 py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl font-black text-white mb-10">Kako izgleda pregled</h2>
           <ol className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -247,14 +308,14 @@ export default function TermalneKamerePage() {
       </section>
 
       {/* Preciznost */}
-      <section className="bg-brand-900 py-16">
+      <section className="bg-brand-800 border-t border-brand-700 py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl font-black text-white mb-10">
             Kako postići maksimalnu preciznost merenja?
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {preciznost.map((p) => (
-              <div key={p.naslov} className="rounded-xl border border-brand-700 bg-brand-800 p-6">
+              <div key={p.naslov} className="rounded-xl border border-brand-700 bg-brand-900 p-6">
                 <h3 className="text-cyan-400 font-bold mb-2">{p.naslov}</h3>
                 <p className="text-brand-300 text-sm leading-relaxed">{p.opis}</p>
               </div>
