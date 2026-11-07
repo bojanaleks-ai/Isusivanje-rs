@@ -30,7 +30,7 @@ const prednosti = [
         <path d="M20 6h-2.18c.07-.44.18-.88.18-1.33C18 2.54 15.6 1 13.5 1c-1.5 0-2.63.59-3.43 1.56L9 4 7.93 2.56C7.13 1.59 6 1 4.5 1 2.4 1 0 2.54 0 4.67 0 5.12.11 5.56.18 6H2C.9 6 0 6.9 0 8v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7.5-3c1.03 0 2.5.68 2.5 1.67 0 .73-.41 1.08-.69 1.33H12V4.33C12 3.68 12.11 3 12.5 3zM4.5 3C5.47 3 6 3.68 6 4.33V6H4.19c-.28-.25-.69-.6-.69-1.33C3.5 3.68 3.97 3 4.5 3zM11 18H2v-2h9v2zm0-4H2v-2h9v2zm0-4H2V8h9v2zm11 8h-9v-2h9v2zm0-4h-9v-2h9v2zm0-4h-9V8h9v2z"/>
       </svg>
     ),
-    title: 'Preko 30 profesionalnih industrijskih mašina',
+    title: 'Preko 35 profesionalnih industrijskih mašina',
     desc: 'Raspolažemo velikim parkom Trotec industrijskih odvlaživača — uvek spreman za svaki obim posla.',
   },
   {
@@ -48,8 +48,8 @@ const prednosti = [
         <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
       </svg>
     ),
-    title: 'Preko 370 zadovoljnih klijenata',
-    desc: 'Više od 370 stambenih i poslovnih objekata uspešno saniranih — pouzdanost potvrđena iskustvom.',
+    title: 'Preko 1300 zadovoljnih klijenata',
+    desc: 'Više od 1300 stambenih i poslovnih objekata uspešno saniranih — pouzdanost potvrđena iskustvom.',
   },
 ]
 
