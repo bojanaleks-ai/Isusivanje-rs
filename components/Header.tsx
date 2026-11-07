@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const navLinks = [
   { href: '/', label: 'Početna' },
@@ -17,6 +17,25 @@ const navLinks = [
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const pathname = usePathname()
+  const [hash, setHash] = useState('')
+
+  useEffect(() => {
+    const update = () => setHash(window.location.hash)
+    update()
+    window.addEventListener('hashchange', update)
+    return () => window.removeEventListener('hashchange', update)
+  }, [pathname])
+
+  // Da li je stavka menija trenutno otvorena (tada je plava)
+  const isActive = (href: string) => {
+    if (href.startsWith('/#')) return pathname === '/' && hash === href.slice(1)
+    if (href === '/') return pathname === '/' && hash !== '#usluge'
+    return pathname === href || pathname.startsWith(href + '/')
+  }
+
+  const onNavClick = (href: string) => {
+    setHash(href.startsWith('/#') ? href.slice(1) : '')
+  }
 
   return (
     <header className="sticky top-0 z-50 bg-brand-950 border-b border-brand-700">
@@ -45,9 +64,10 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  onClick={() => onNavClick(link.href)}
                   className={`px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-colors ${
-                    pathname === link.href
-                      ? 'text-accent-400'
+                    isActive(link.href)
+                      ? 'text-cyan-400'
                       : 'text-brand-200 hover:text-white'
                   }`}
                 >
@@ -96,10 +116,13 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                onClick={() => setMenuOpen(false)}
+                onClick={() => {
+                  setMenuOpen(false)
+                  onNavClick(link.href)
+                }}
                 className={`px-4 py-3 text-sm font-semibold uppercase tracking-wider transition-colors ${
-                  pathname === link.href
-                    ? 'text-accent-400'
+                  isActive(link.href)
+                    ? 'text-cyan-400'
                     : 'text-brand-200 hover:text-white'
                 }`}
               >
