@@ -51,10 +51,6 @@ const faq = [
     a: 'Zavisi od stepena vlage i vrste konstrukcije. Tipično isušivanje traje od 3 do 10 dana uz kontinuirani rad industrijskih mašina.',
   },
   {
-    q: 'Da li radite i sa osiguravajućim društvima?',
-    a: 'Da — izdajemo detaljnu tehničku dokumentaciju i izveštaje o merenijma koji su potrebni za osiguravajuće zahteve.',
-  },
-  {
     q: 'Koja područja pokrivate?',
     a: 'Pokrivamo celu Srbiju — dolazimo na teren gde god se nalazili.',
   },
