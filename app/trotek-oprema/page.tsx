@@ -133,7 +133,7 @@ export default function TrotekOpremaPage() {
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <a
-              href="tel:+381623553456"
+              href="tel:+38162355345"
               className="inline-flex items-center justify-center gap-2 bg-black text-white font-bold text-lg px-6 py-3 rounded-lg hover:bg-brand-800 transition-colors"
             >
               📞 062 355 345

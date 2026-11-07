@@ -133,7 +133,7 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="tel:+381623553456"
+                  href="tel:+38162355345"
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent-500 hover:bg-accent-400 text-black text-lg font-black uppercase tracking-wider rounded-md transition-colors shadow-lg"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -334,7 +334,7 @@ export default function HomePage() {
 
               {/* Phone CTA */}
               <a
-                href="tel:+381623553456"
+                href="tel:+38162355345"
                 className="flex items-center gap-4 bg-accent-500 hover:bg-accent-400 transition-colors rounded-xl px-6 py-5"
               >
                 <div className="w-12 h-12 bg-black/20 rounded-full flex items-center justify-center flex-shrink-0">

@@ -10,9 +10,9 @@ const kontaktInfo = [
   {
     icon: '📞',
     title: 'Telefon',
-    lines: ['+381 60 123 4567'],
+    lines: ['062 355 345'],
     note: 'Dostupni 0–24h, 7 dana u nedelji',
-    href: 'tel:+381623553456',
+    href: 'tel:+38162355345',
   },
   {
     icon: '✉️',
@@ -115,10 +115,10 @@ export default function KontaktPage() {
               Poplava ili curenje vode ne čeka. Pozovite nas odmah — naš tim stiže u roku od 2 sata.
             </p>
             <a
-              href="tel:+381623553456"
+              href="tel:+38162355345"
               className="inline-flex items-center gap-3 bg-white text-brand-900 font-bold text-xl px-8 py-4 rounded-xl shadow-lg hover:bg-brand-50 transition-colors"
             >
-              📞 +381 60 123 4567
+              📞 062 355 345
             </a>
           </div>
 

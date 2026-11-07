@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const TELEFON_PRIKAZ = '062 355 345'
-const TELEFON_HREF = 'tel:+381623553456'
+const TELEFON_HREF = 'tel:+38162355345'
 
 const brojevi = [
   { broj: '12+', opis: 'godina iskustva' },

@@ -59,7 +59,7 @@ export default function Header() {
           {/* Phone + CTA */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:+381623553456"
+              href="tel:+38162355345"
               className="flex items-center gap-2 text-sm font-semibold text-white hover:text-accent-400 transition-colors"
             >
               <svg className="w-4 h-4 text-accent-400" fill="currentColor" viewBox="0 0 24 24">
@@ -106,7 +106,7 @@ export default function Header() {
               </Link>
             ))}
             <div className="mt-3 pt-3 border-t border-brand-700 flex flex-col gap-3">
-              <a href="tel:+381623553456" className="text-center font-semibold text-white py-2">
+              <a href="tel:+38162355345" className="text-center font-semibold text-white py-2">
                 📞 062 355 345
               </a>
               <Link
