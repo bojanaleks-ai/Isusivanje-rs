@@ -98,8 +98,7 @@ export default function ONamaPage() {
             <div className="space-y-4 text-brand-300 leading-relaxed">
               <p>
                 Počeli smo sa idejom da problem vlage treba rešiti brzo i stručno, bez skupih
-                građevinskih radova. Svaka nova intervencija donosila je novo iskustvo — i novu
-                mašinu u našem parku.
+                građevinskih radova. Svaka nova intervencija donosila je novo iskustvo.
               </p>
               <p>
                 Danas raspolažemo sa više od 35 profesionalnih Trotec industrijskih odvlaživača i
