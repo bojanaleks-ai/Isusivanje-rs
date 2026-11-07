@@ -88,8 +88,7 @@ const usluge = [
   {
     title: 'Kondenzacija i buđ',
     desc: 'Uklanjamo vlagu nastalu kondenzacijom i sprečavamo nastanak buđi i plesni. Zdraviji vazduh u prostoru.',
-    img: '/images/ttk400.jpg',
-    fit: 'contain' as const,
+    img: '/images/usluga-kondenzacija.jpg',
     icon: '🌫️',
   },
   {
