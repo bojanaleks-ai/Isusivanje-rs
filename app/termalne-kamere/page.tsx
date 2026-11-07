@@ -37,7 +37,7 @@ const sta = [
 const prednosti = [
   'Bez razbijanja zidova i podova',
   'Brz pregled celog prostora',
-  'Precizna lokacija problema',
+  'Provera toplotnih gubitaka na objektu',
   'Manji troškovi sanacije',
 ]
 
