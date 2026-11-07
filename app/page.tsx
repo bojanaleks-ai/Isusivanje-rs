@@ -76,14 +76,13 @@ const usluge = [
   {
     title: 'Podrumi i garaže',
     desc: 'Isušujemo vlažne podrume i garaže, i kod prodora podzemnih voda. Prostor ponovo postaje suv i upotrebljiv.',
-    img: '/images/hero-bg.jpg',
+    img: '/images/usluga-podrum.jpg',
     icon: '🏚️',
   },
   {
     title: 'Curenje vode i pucanje cevi',
     desc: 'Sanacija štete posle pucanja vodovodnih instalacija i curenja od komšija. Brzo isušivanje sprečava dalja oštećenja.',
-    img: '/images/ttk500.jpg',
-    fit: 'contain' as const,
+    img: '/images/usluga-cev.jpg',
     icon: '💧',
   },
   {
