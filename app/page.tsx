@@ -94,8 +94,7 @@ const usluge = [
   {
     title: 'Industrijsko i građevinsko isušivanje',
     desc: 'Isušivanje hala, magacina, lokala i novogradnje. Ubrzavamo sušenje estriha i maltera pre završnih radova.',
-    img: '/images/ttk570.jpg',
-    fit: 'contain' as const,
+    img: '/images/usluga-gradjevina.jpg',
     icon: '🏭',
   },
 ]
