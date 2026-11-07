@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import UslugeKarusel from '@/components/UslugeKarusel'
 
 export const metadata: Metadata = {
   title: 'Isušivanje Vlage — Profesionalno isušivanje u Srbiji',
@@ -71,6 +72,33 @@ const usluge = [
     desc: 'Hitna intervencija 0-24h. Izvlačimo vodu iz prostora i radimo kompletnu sanaciju štete od poplave.',
     img: '/images/usluga-poplava.jpg',
     icon: '🌊',
+  },
+  {
+    title: 'Podrumi i garaže',
+    desc: 'Isušujemo vlažne podrume i garaže, i kod prodora podzemnih voda. Prostor ponovo postaje suv i upotrebljiv.',
+    img: '/images/hero-bg.jpg',
+    icon: '🏚️',
+  },
+  {
+    title: 'Curenje vode i pucanje cevi',
+    desc: 'Sanacija štete posle pucanja vodovodnih instalacija i curenja od komšija. Brzo isušivanje sprečava dalja oštećenja.',
+    img: '/images/ttk500.jpg',
+    fit: 'contain' as const,
+    icon: '💧',
+  },
+  {
+    title: 'Kondenzacija i buđ',
+    desc: 'Uklanjamo vlagu nastalu kondenzacijom i sprečavamo nastanak buđi i plesni. Zdraviji vazduh u prostoru.',
+    img: '/images/ttk400.jpg',
+    fit: 'contain' as const,
+    icon: '🌫️',
+  },
+  {
+    title: 'Industrijsko i građevinsko isušivanje',
+    desc: 'Isušivanje hala, magacina, lokala i novogradnje. Ubrzavamo sušenje estriha i maltera pre završnih radova.',
+    img: '/images/ttk570.jpg',
+    fit: 'contain' as const,
+    icon: '🏭',
   },
 ]
 
@@ -270,26 +298,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {usluge.map((u) => (
-              <div key={u.title} className="group rounded-xl overflow-hidden bg-brand-800 border border-brand-700 hover:border-cyan-500 transition-all duration-300">
-                {/* Photo area */}
-                <div className="relative h-48 bg-brand-700 overflow-hidden">
-                  <Image src={u.img} alt={u.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className="absolute bottom-3 left-3">
-                    <span className="bg-cyan-400 text-black text-xs font-bold uppercase px-2 py-1 rounded">
-                      {u.icon}
-                    </span>
-                  </div>
-                </div>
-                <div className="p-5">
-                  <h3 className="text-white font-bold mb-2">{u.title}</h3>
-                  <p className="text-brand-300 text-sm leading-relaxed">{u.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <UslugeKarusel usluge={usluge} />
         </div>
       </section>
 
