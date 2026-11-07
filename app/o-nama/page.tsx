@@ -25,7 +25,7 @@ const koraci = [
   },
   {
     naslov: 'Merenje vlage',
-    opis: 'Dolazimo na lice mesta i profesionalnim instrumentima merimo vlagu u zidovima, podovima i vazduhu.',
+    opis: 'Dolazimo na lice mesta i profesionalnim instrumentima merimo vlagu u zidovima i podovima.',
   },
   {
     naslov: 'Isušivanje',
