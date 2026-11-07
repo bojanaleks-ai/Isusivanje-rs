@@ -29,14 +29,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-function formatDate(dateStr: string) {
-  return new Date(dateStr).toLocaleDateString('sr-RS', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  })
-}
-
 export default async function BlogPostPage({ params }: Props) {
   let post
   try {
@@ -79,10 +71,7 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           )}
           <h1 className="text-3xl sm:text-4xl font-bold mb-4 leading-tight">{post.title}</h1>
-          <p className="text-brand-200 text-lg mb-4">{post.excerpt}</p>
-          <time className="text-brand-300 text-sm" dateTime={post.date}>
-            Objavljeno: {formatDate(post.date)}
-          </time>
+          <p className="text-brand-200 text-lg">{post.excerpt}</p>
         </div>
       </div>
 
