@@ -58,7 +58,7 @@ const usluge = [
   {
     title: 'Isušivanje zidova',
     desc: 'Uklanjamo vlagu iz zidova, temelja i unutrašnjih konstrukcija. Sprečavamo dalji razvoj plesni i oštećenja.',
-    img: '/images/usluga-zidovi.jpg',
+    img: '/images/usluga-zidovi-vlaga.jpg',
     icon: '🧱',
   },
   {
