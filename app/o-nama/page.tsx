@@ -37,7 +37,7 @@ const zastoMi = [
   {
     icon: '⚙️',
     naslov: 'Profesionalna nemačka oprema',
-    opis: 'Radimo isključivo sa Trotec industrijskim odvlaživačima, namenjenim za teške uslove i dug rad.',
+    opis: 'Radimo isključivo sa industrijskom opremom namenjenom za teške uslove i dug rad.',
   },
   {
     icon: '🧱',
