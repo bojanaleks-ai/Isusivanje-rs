@@ -37,6 +37,7 @@ export default function Footer() {
                 { href: '/', label: 'Početna' },
                 { href: '/o-nama', label: 'O nama' },
                 { href: '/trotek-oprema', label: 'Trotek oprema' },
+                { href: '/termalne-kamere', label: 'Termalne kamere' },
                 { href: '/#usluge', label: 'Naše usluge' },
                 { href: '/blog', label: 'Blog' },
                 { href: '/kontakt', label: 'Kontakt' },
