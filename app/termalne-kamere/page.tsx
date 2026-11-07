@@ -30,6 +30,67 @@ const sta = [
   },
 ]
 
+const specifikacije = [
+  { label: 'Rezolucija IR senzora', value: '160 × 120 piksela (19.200 mernih tačaka)' },
+  { label: 'Merni opseg', value: '−10 °C do +400 °C' },
+  { label: 'Tačnost merenja', value: '±3,0 °C' },
+  { label: 'Termalna osetljivost (NETD)', value: '≤ 50 mK' },
+  { label: 'Ekran i memorija', value: '3,5" ekran i interna memorija do 500 slika (.jpg)' },
+  { label: 'Povezivanje', value: 'Wi-Fi (Bosch ThermalOn aplikacija) i micro-USB (GTC Transfer softver)' },
+  { label: 'Napajanje', value: 'Dvostruko – Bosch 12 V Li-ion baterija ili 4 × AA alkalne baterije' },
+]
+
+const oblasti = [
+  {
+    naslov: 'Građevinarstvo i energetska efikasnost',
+    stavke: [
+      'Otkrivanje toplotnih mostova oko prozora, uglova i serklaža.',
+      'Provera kvaliteta termoizolacije zidova, krovova i fasada.',
+      'Lociranje mesta prodora hladnog vazduha i promaje.',
+    ],
+  },
+  {
+    naslov: 'Detekcija vlage i curenja vode',
+    stavke: [
+      'Pronalaženje skrivenog curenja cevi u zidovima i podovima bez rušenja.',
+      'Identifikacija vlažnih zona i potencijalnih žarišta buđi.',
+    ],
+  },
+  {
+    naslov: 'HVAC i podno grejanje',
+    stavke: [
+      'Praćenje trase cevi podnog grejanja pre bušenja radi izbegavanja oštećenja.',
+      'Kontrola ravnomernosti zagrevanja radijatora i rada toplotnih pumpi.',
+    ],
+  },
+  {
+    naslov: 'Elektroinstalacije i industrija',
+    stavke: [
+      'Detekcija pregrejanih osigurača, sklopki i labavih kontakata u razvodnim tablama.',
+      'Preventivni pregledi elektromotora, ležajeva i solarnih panela („hot spot“ zone).',
+    ],
+  },
+]
+
+const preciznost = [
+  {
+    naslov: 'Pravilna razlika temperatura',
+    opis: 'Za snimanje fasada razlika između unutrašnje i spoljne temperature treba da bude minimalno 10 °C (idealno 15 °C+).',
+  },
+  {
+    naslov: 'Bez direktnog sunca',
+    opis: 'Fasada ne sme biti izložena sunčevoj svetlosti nekoliko sati pre snimanja (najbolje vreme je rano ujutru, uveče ili noću).',
+  },
+  {
+    naslov: 'Podešavanje emisivnosti',
+    opis: 'Uvek prilagodite vrednost emisivnosti materijala koji merite (beton, drvo, malter) kako biste izbegli netačna očitavanja.',
+  },
+  {
+    naslov: 'Udaljenost i ugao',
+    opis: 'Stanite pod uglom od oko 90° na minimalnoj udaljenosti od 0,3 m od objekta merenja.',
+  },
+]
+
 const prednosti = [
   'Bez razbijanja zidova i podova',
   'Brz pregled celog prostora',
@@ -80,8 +141,67 @@ export default function TermalneKamerePage() {
         </div>
       </section>
 
-      {/* Šta otkrivamo */}
+      {/* Bosch GTC 400 C */}
+      <section className="bg-brand-900 py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="inline-flex items-center gap-3 bg-white/5 border border-white/10 rounded-lg px-5 py-3 mb-6">
+            <span className="text-white font-black uppercase tracking-widest text-sm">Bosch</span>
+            <span className="w-px h-4 bg-white/30" />
+            <span className="text-brand-300 text-xs uppercase tracking-wider">Professional</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-black text-white mb-4">
+            Bosch GTC 400 C Professional termalna kamera
+          </h2>
+          <p className="text-brand-300 leading-relaxed max-w-3xl mb-10">
+            Bosch GTC 400 C Professional je vodeća profesionalna termalna kamera koja omogućava brzo
+            i nedestruktivno otkrivanje temperaturnih razlika, vlage, curenja i toplotnih mostova.
+            Namenjena je majstorima, energetskim savetnicima, električarima i instalaterima, a uz
+            ugrađenu vizuelnu kameru pruža jasne dokaze i dokumentaciju direktno sa terena.
+          </p>
+
+          <h3 className="text-white font-bold text-lg mb-4 uppercase tracking-wider">
+            Ključne tehničke karakteristike
+          </h3>
+          <dl className="grid grid-cols-1 md:grid-cols-2 gap-x-8 rounded-xl border border-brand-700 bg-brand-800 px-6 py-2">
+            {specifikacije.map((s) => (
+              <div key={s.label} className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4 py-3 border-b border-brand-700 last:border-b-0 md:[&:nth-last-child(2)]:border-b-0">
+                <dt className="text-brand-300 text-sm">{s.label}</dt>
+                <dd className="text-white text-sm font-semibold sm:text-right">{s.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+
+      {/* Oblasti primene */}
       <section className="bg-brand-800 border-y border-brand-700 py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-black text-white mb-10">Glavne oblasti primene</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {oblasti.map((o, i) => (
+              <div key={o.naslov} className="rounded-xl border border-brand-700 bg-brand-900 p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="w-8 h-8 rounded-full bg-cyan-400 text-black font-black text-sm flex items-center justify-center flex-shrink-0">
+                    {i + 1}
+                  </span>
+                  <h3 className="text-white font-bold text-lg">{o.naslov}</h3>
+                </div>
+                <ul className="space-y-2">
+                  {o.stavke.map((s) => (
+                    <li key={s} className="flex gap-3 text-brand-300 text-sm leading-relaxed">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent-500 flex-shrink-0 mt-2" />
+                      {s}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Šta otkrivamo */}
+      <section className="bg-brand-900 py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl font-black text-white mb-2">Šta otkrivamo termalnom kamerom</h2>
           <p className="text-brand-300 mb-10 max-w-2xl">
@@ -92,7 +212,7 @@ export default function TermalneKamerePage() {
             {sta.map((s) => (
               <div
                 key={s.naslov}
-                className="rounded-xl border border-brand-700 bg-brand-900 hover:border-cyan-500 transition-colors p-6"
+                className="rounded-xl border border-brand-700 bg-brand-800 hover:border-cyan-500 transition-colors p-6"
               >
                 <h3 className="text-white font-bold text-lg mb-2">{s.naslov}</h3>
                 <p className="text-brand-300 text-sm leading-relaxed">{s.opis}</p>
@@ -103,7 +223,7 @@ export default function TermalneKamerePage() {
       </section>
 
       {/* Kako izgleda pregled */}
-      <section className="bg-brand-900 py-16">
+      <section className="bg-brand-800 border-y border-brand-700 py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl font-black text-white mb-10">Kako izgleda pregled</h2>
           <ol className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -123,6 +243,23 @@ export default function TermalneKamerePage() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* Preciznost */}
+      <section className="bg-brand-900 py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl font-black text-white mb-10">
+            Kako postići maksimalnu preciznost merenja?
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {preciznost.map((p) => (
+              <div key={p.naslov} className="rounded-xl border border-brand-700 bg-brand-800 p-6">
+                <h3 className="text-cyan-400 font-bold mb-2">{p.naslov}</h3>
+                <p className="text-brand-300 text-sm leading-relaxed">{p.opis}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
