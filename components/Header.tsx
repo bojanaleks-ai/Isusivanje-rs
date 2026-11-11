@@ -11,6 +11,7 @@ const navLinks = [
   { href: '/termalne-kamere', label: 'Termalne kamere' },
   { href: '/#usluge', label: 'Naše usluge' },
   { href: '/blog', label: 'Blog' },
+  { href: '/galerija', label: 'Galerija' },
   { href: '/kontakt', label: 'Kontakt' },
 ]
 
