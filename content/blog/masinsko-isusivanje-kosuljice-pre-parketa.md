@@ -27,12 +27,9 @@ Mašinsko isušivanje se radi industrijskim kondenzacionim isušivačima vazduha
 
 ## Koliko košta mašinsko isušivanje košuljice?
 
-Cena zavisi od kvadrature objekta, početne vlažnosti, broja potrebnih mašina i potrošnje struje. U poređenju sa štetom od prerano postavljenog parketa, ovo je višestruko isplativa investicija:
+Cena zavisi od kvadrature objekta, početne vlažnosti i broja potrebnih mašina. U poređenju sa štetom od prerano postavljenog parketa, ovo je višestruko isplativa investicija:
 
 - **Najam opreme:** cena dnevnog najma zavisi od kapaciteta mašine, na primer Trotec TTK 400, TTK 500 ili TTK 570 ECO.
-- **Kompletna usluga na terenu:** ako angažujete tim koji radi procenu, postavlja mašine, prati i meri vlagu, cena se formira po kvadratnom metru ili po danu rada, sa uračunatim dolaskom i postavljanjem.
-- **Ušteda vremena:** umesto oko 4 meseca čekanja, mašinsko isušivanje se završava za 7 do 15 dana, pa radovi mogu brzo da se nastave.
-
 ## Glavne prednosti mašinskog isušivanja
 
 - **Sigurnost za parket i podne obloge:** nema kasnijeg bubrenja, podizanja ni škripanja parketa zbog zaostale vlage.
