@@ -25,7 +25,7 @@ const kontaktInfo = [
     icon: '📍',
     title: 'Oblast rada',
     lines: ['Cela Srbija'],
-    note: 'Ekipe raspoređene širom Srbije',
+    note: 'Pokrivamo celu Srbiju, dolazimo na vašu adresu',
     href: null,
   },
   {
