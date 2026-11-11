@@ -41,6 +41,10 @@ const prednosti = [
     opis: 'Kärcher NT 611 je industrijski usisivač koji izvlači veliku količinu vode mnogo brže od kućnih aparata.',
   },
   {
+    naslov: 'Pumpa za kontinuiran rad',
+    opis: 'Ugrađena pumpa stalno odvodi usisanu vodu crevom u odvod ili napolje, pa nema pauza za pražnjenje rezervoara, čak ni kod velikih količina vode.',
+  },
+  {
     naslov: 'Manja šteta',
     opis: 'Što se voda brže ukloni, manje je upija pod, nameštaj i zidovi, a sanacija je jeftinija.',
   },
@@ -71,7 +75,7 @@ const pitanja = [
   },
   {
     q: 'Može li usisivač za vodu da se koristi u podrumu?',
-    a: 'Može. Usisivači za vodu su idealni za podrume i garaže, posebno tamo gde nema slivnika ili pumpe.',
+    a: 'Može. Usisivači za vodu su idealni za podrume i garaže, posebno tamo gde nema slivnika. Naš Kärcher NT 611 ima ugrađenu pumpu, pa vodu odmah odvodi crevom napolje i radi bez prekida.',
   },
   {
     q: 'Gde radite?',
@@ -116,8 +120,10 @@ export default function UsisivaciZaVoduPage() {
           <p className="mt-6 text-brand-300 text-lg leading-relaxed max-w-3xl">
             Poplava, pukla cev ili voda u podrumu? Prvi i najvažniji korak je da se voda što pre
             ukloni. Profesionalnim usisivačem za vodu <strong className="text-white">Kärcher NT 611</strong>,
-            sa rezervoarom od 55 litara, izvlačimo vodu sa podova, iz tepiha i sa teško dostupnih
-            mesta, a zatim prostor isušujemo Trotec isušivačima dok ne bude potpuno suv.
+            sa rezervoarom od 55 litara i ugrađenom pumpom, izvlačimo vodu sa podova, iz tepiha i sa
+            teško dostupnih mesta, a zatim prostor isušujemo Trotec isušivačima dok ne bude potpuno suv.
+            Pumpa usisanu vodu odmah odvodi crevom u odvod ili napolje, pa usisivač radi
+            kontinuirano, bez zaustavljanja i ručnog pražnjenja rezervoara.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <a
@@ -156,7 +162,7 @@ export default function UsisivaciZaVoduPage() {
       <section className="bg-brand-800 border-y border-brand-700 py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl font-black text-white mb-10">Zašto profesionalni usisivač za vodu</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
             {prednosti.map((p) => (
               <div key={p.naslov} className="rounded-xl border border-brand-700 bg-brand-900 p-6">
                 <h3 className="text-cyan-400 font-bold mb-2">{p.naslov}</h3>
