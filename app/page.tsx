@@ -4,9 +4,63 @@ import Link from 'next/link'
 import UslugeKarusel from '@/components/UslugeKarusel'
 
 export const metadata: Metadata = {
-  title: 'Isušivanje Vlage — Profesionalno isušivanje u Srbiji',
+  title: { absolute: 'Isušivanje vlage Beograd | Iznajmljivanje isušivača Trotec 24/7' },
   description:
-    'Profesionalno isušivanje vlage Trotek industrijskim mašinama. Sanacija šteta od vode i buđi širom Srbije. Brza reakcija 0–24h.',
+    'Profesionalno isušivanje stanova, zidova i podruma posle poplave ili curenja vode. Iznajmljivanje isušivača vlage Trotec u Beogradu i Srbiji, dolazak 24/7, besplatna procena.',
+}
+
+const uslugeSeo = [
+  { naslov: 'Isušivanje stana i kuće posle poplave', opis: 'brzo izvlačenje vode i vlage iz zidova, podova i nameštaja' },
+  { naslov: 'Isušivanje zidova', opis: 'rešavamo vlagu u zidovima koja izaziva buđ i ljuštenje boje' },
+  { naslov: 'Isušivanje posle curenja vode i pucanja cevi', opis: 'delujemo odmah, pre nego što voda napravi veću štetu' },
+  { naslov: 'Isušivanje podruma i garaža', opis: 'trajno uklanjamo vlagu iz podzemnih prostorija' },
+  { naslov: 'Isušivanje košuljice i estriha', opis: 'ubrzavamo sušenje kako biste ranije postavili parket ili pločice' },
+  { naslov: 'Kondenzacija i buđ', opis: 'smanjujemo vlažnost vazduha i sprečavamo da se buđ vrati' },
+  { naslov: 'Industrijsko i građevinsko isušivanje', opis: 'za gradilišta, magacine i poslovne prostore' },
+]
+
+const zastoMi = [
+  'Dolazak 24/7, i vikendom i praznikom',
+  'Besplatna procena vlage i saveti šta je potrebno',
+  'Profesionalne Trotec mašine, ne kućni odvlaživači',
+  'Više od 12 godina iskustva i 1300+ zadovoljnih klijenata',
+  'Radimo u Beogradu i u celoj Srbiji',
+]
+
+const koraci = [
+  'Pozovete nas i opišete problem',
+  'Dolazimo, merimo vlagu i besplatno procenjujemo posao',
+  'Postavljamo isušivače i pratimo napredak',
+  'Odnosimo mašine kad je prostor potpuno suv',
+]
+
+const pitanja = [
+  {
+    q: 'Koliko traje isušivanje stana posle poplave?',
+    a: 'Najčešće od 5 do 14 dana. Zavisi od količine vode, materijala zidova i toga koliko je brzo isušivanje počelo.',
+  },
+  {
+    q: 'Koliko košta iznajmljivanje isušivača vlage?',
+    a: 'Cena zavisi od broja mašina i trajanja. Pozovite nas za besplatnu procenu i tačnu ponudu.',
+  },
+  {
+    q: 'Da li je bolji isušivač ili obično provetravanje?',
+    a: 'Provetravanje pomaže samo sa površinskom vlagom. Profesionalni isušivač izvlači vlagu iz dubine zidova i poda, pa je sve suvo mnogo brže i nema buđi.',
+  },
+  {
+    q: 'Da li dolazite vikendom i noću?',
+    a: 'Da, radimo 24/7. Kod curenja vode i poplave svaki sat je važan.',
+  },
+]
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: pitanja.map((p) => ({
+    '@type': 'Question',
+    name: p.q,
+    acceptedAnswer: { '@type': 'Answer', text: p.a },
+  })),
 }
 
 const trotekMasine = [
@@ -186,87 +240,73 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* O nama / SEO tekst */}
       <section className="bg-brand-900 py-16 border-b border-brand-800">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-brand-300 leading-relaxed">
+          <h2 className="text-2xl sm:text-3xl font-black text-white mb-5">
+            Isušivanje vlage i iznajmljivanje isušivača u Beogradu i celoj Srbiji
+          </h2>
+          <p className="mb-12">
+            Poplava, pukla cev ili vlaga u zidovima? Brzo isušivanje sprečava buđ, neprijatan miris
+            i skupe popravke. Imamo više od 12 godina iskustva i preko 35 profesionalnih isušivača
+            Trotec, a izlazimo na teren 24 sata dnevno, 7 dana u nedelji. Do sada smo pomogli u više
+            od 1300 intervencija u stanovima, kućama, lokalima i na gradilištima.
+          </p>
 
-            {/* Levo */}
-            <div>
-              <h2 className="text-2xl sm:text-3xl font-black text-white mb-5">
-                Profesionalno isušivanje vlage i sanacija štete od vode u celoj Srbiji
-              </h2>
-              <p className="text-brand-300 leading-relaxed mb-4">
-                Pružamo profesionalne usluge isušivanja vlage, sušenja zidova, podova i kompletnih
-                objekata uz pomoć savremene Trotec opreme namenjene za brzo i efikasno uklanjanje
-                viška vlage. Specijalizovani smo za sanaciju posledica poplava, pucanja vodovodnih
-                instalacija, curenja vode, prodora podzemnih voda i problema izazvanih kondenzacijom.
-              </p>
-              <p className="text-brand-300 leading-relaxed mb-6">
-                Vlaga u zidovima, podovima i plafonima može izazvati ozbiljna oštećenja objekta,
-                pojavu buđi i neprijatnih mirisa, kao i narušavanje kvaliteta vazduha u prostoru.
-                Naš stručni tim koristi profesionalne mašine za isušivanje koje omogućavaju precizno
-                i kontrolisano uklanjanje vlage bez potrebe za skupim građevinskim radovima.
-              </p>
-              <p className="text-brand-300 leading-relaxed">
-                Bez obzira da li je u pitanju stan, kuća, poslovni prostor, lokal, magacin ili
-                industrijski objekat, obezbeđujemo brzo reagovanje i efikasna rešenja za sve vrste
-                problema sa vlagom. Zahvaljujući profesionalnoj Trotec tehnologiji, proces isušivanja
-                je znatno brži u poređenju sa prirodnim sušenjem, čime se smanjuje rizik od dodatnih
-                oštećenja i troškova sanacije.
-              </p>
-            </div>
+          <h3 className="text-xl sm:text-2xl font-black text-white mb-4">Iznajmljivanje isušivača vlage</h3>
+          <p className="mb-12">
+            Iznajmljujemo profesionalne kondenzacione isušivače (odvlaživače vazduha) Trotec TTK 400,
+            TTK 500 i TTK 570 ECO. Mašine dovozimo, postavljamo i pratimo dok prostor ne bude potpuno
+            suv. Može na dan, nedelju ili duže, zavisno od toga koliko je vlage.
+          </p>
 
-            {/* Desno */}
-            <div className="flex flex-col gap-8">
-              <div>
-                <h3 className="text-white font-bold text-lg mb-4 uppercase tracking-wider">
-                  Usluge koje pružamo
-                </h3>
-                <ul className="space-y-2">
-                  {[
-                    'Isušivanje vlage iz zidova',
-                    'Sušenje podova i estriha',
-                    'Isušivanje podruma i garaža',
-                    'Sanacija nakon poplava',
-                    'Sanacija štete od curenja vode',
-                    'Uklanjanje vlage nastale kondenzacijom',
-                    'Industrijsko i građevinsko isušivanje objekata',
-                    'Prevencija nastanka buđi i plesni',
-                  ].map((u) => (
-                    <li key={u} className="flex items-center gap-3 text-brand-300 text-sm">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent-500 flex-shrink-0" />
-                      {u}
-                    </li>
-                  ))}
-                </ul>
+          <h3 className="text-xl sm:text-2xl font-black text-white mb-4">Usluge isušivanja</h3>
+          <ul className="space-y-3 mb-12">
+            {uslugeSeo.map((u) => (
+              <li key={u.naslov} className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-accent-500 flex-shrink-0 mt-2.5" />
+                <span>
+                  <strong className="text-white">{u.naslov}:</strong> {u.opis}
+                </span>
+              </li>
+            ))}
+          </ul>
+
+          <h3 className="text-xl sm:text-2xl font-black text-white mb-4">Zašto da izaberete nas</h3>
+          <ul className="space-y-3 mb-12">
+            {zastoMi.map((z) => (
+              <li key={z} className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 flex-shrink-0 mt-2.5" />
+                {z}
+              </li>
+            ))}
+          </ul>
+
+          <h3 className="text-xl sm:text-2xl font-black text-white mb-4">Kako izgleda isušivanje</h3>
+          <ol className="space-y-3 mb-12">
+            {koraci.map((k, i) => (
+              <li key={k} className="flex items-start gap-3">
+                <span className="text-cyan-400 font-black w-5 flex-shrink-0">{i + 1}.</span>
+                {k}
+              </li>
+            ))}
+          </ol>
+
+          <h3 className="text-xl sm:text-2xl font-black text-white mb-6">Česta pitanja</h3>
+          <div className="space-y-6">
+            {pitanja.map((p) => (
+              <div key={p.q}>
+                <h4 className="text-white font-bold mb-1">{p.q}</h4>
+                <p>{p.a}</p>
               </div>
-
-              <div>
-                <h3 className="text-white font-bold text-lg mb-4 uppercase tracking-wider">
-                  Zašto odabrati nas?
-                </h3>
-                <ul className="space-y-2">
-                  {[
-                    'Profesionalna Trotec oprema za isušivanje',
-                    'Dugogodišnje iskustvo — preko 12 godina',
-                    'Brz izlazak na teren',
-                    'Rešenja za stambene i poslovne objekte',
-                    'Pokrivenost cele teritorije Srbije',
-                    'Pouzdana i efikasna usluga',
-                  ].map((z) => (
-                    <li key={z} className="flex items-center gap-3 text-brand-300 text-sm">
-                      <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 flex-shrink-0" />
-                      {z}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
+            ))}
           </div>
         </div>
       </section>
+
 
       {/* Prednosti strip */}
       <section className="bg-brand-800 border-y border-brand-700 py-10">
