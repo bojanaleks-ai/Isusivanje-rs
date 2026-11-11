@@ -165,7 +165,10 @@ export default function ONamaPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           <div>
             <h2 className="text-2xl sm:text-3xl font-black text-black">Imate problem sa vlagom?</h2>
-            <p className="text-black/70 mt-1">Pozovite nas — dolazimo i merimo, pa se dogovaramo.</p>
+            <p className="mt-3 inline-flex items-center gap-2 rounded-full bg-black/10 px-4 py-1.5 text-black font-semibold">
+              <span className="w-2 h-2 rounded-full bg-black animate-pulse" />
+              Pozovite nas, tu smo za vas 24/7
+            </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <a
