@@ -38,6 +38,7 @@ export default function Footer() {
                 { href: '/o-nama', label: 'O nama' },
                 { href: '/trotek-oprema', label: 'Trotek oprema' },
                 { href: '/termalne-kamere', label: 'Termalne kamere' },
+                { href: '/ozonizator', label: 'Ozonizator' },
                 { href: '/#usluge', label: 'Naše usluge' },
                 { href: '/blog', label: 'Blog' },
                 { href: '/kontakt', label: 'Kontakt' },
