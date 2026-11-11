@@ -2,7 +2,7 @@
 title: "Koliko košta i kako se radi mašinsko isušivanje novogradnje i košuljice pre parketa?"
 date: "2026-11-06"
 excerpt: "Parket postavljen na vlažnu košuljicu se podiže, deformiše i buđa. Saznajte zašto je prirodno sušenje sporo i rizično, kako radi mašinsko isušivanje i od čega zavisi cena."
-coverImage: "/images/blog-kosuljica-parket.jpg"
+coverImage: "/images/blog-kosuljica-isusivac-parket.jpg"
 tags: ["košuljica", "novogradnja", "parket"]
 ---
 
