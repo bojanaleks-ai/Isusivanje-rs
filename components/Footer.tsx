@@ -37,9 +37,10 @@ export default function Footer() {
                 { href: '/', label: 'Početna' },
                 { href: '/o-nama', label: 'O nama' },
                 { href: '/trotek-oprema', label: 'Trotek oprema' },
+                { href: '/#usluge', label: 'Naše usluge' },
                 { href: '/termalne-kamere', label: 'Termalne kamere' },
                 { href: '/ozonizator', label: 'Ozonizator' },
-                { href: '/#usluge', label: 'Naše usluge' },
+                { href: '/usisivaci-za-vodu', label: 'Usisivači za vodu' },
                 { href: '/blog', label: 'Blog' },
                 { href: '/kontakt', label: 'Kontakt' },
               ].map((link) => (
