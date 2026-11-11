@@ -25,7 +25,8 @@ export default function GalerijaPage() {
   return (
     <section className="bg-brand-900 py-12 min-h-[70vh]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl sm:text-4xl font-black text-white mb-8">Galerija</h1>
+        <h1 className="text-3xl sm:text-4xl font-black text-white">Galerija</h1>
+        <p className="text-brand-300 text-lg mt-2 mb-8">Slike sa terena</p>
         <GalerijaMreza slike={slike} />
       </div>
     </section>

@@ -44,7 +44,7 @@ export default function GalerijaMreza({ slike }: { slike: string[] }) {
           >
             <Image
               src={src}
-              alt={`Isušivanje vlage — slika ${i + 1}`}
+              alt={`Slika sa terena ${i + 1}`}
               fill
               sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
               className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -63,7 +63,7 @@ export default function GalerijaMreza({ slike }: { slike: string[] }) {
           <div className="relative w-full max-w-5xl h-[80vh]" onClick={(e) => e.stopPropagation()}>
             <Image
               src={slike[otvorena]}
-              alt={`Isušivanje vlage — slika ${otvorena + 1}`}
+              alt={`Slika sa terena ${otvorena + 1}`}
               fill
               sizes="100vw"
               className="object-contain"
