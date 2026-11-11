@@ -35,7 +35,7 @@ export default function BlogPage() {
               >
                 {/* Slika / placeholder */}
                 {post.coverImage ? (
-                  <Link href={`/blog/${post.slug}`} className="relative h-44 block overflow-hidden">
+                  <Link href={`/blog/${post.slug}`} className="relative h-56 block overflow-hidden">
                     <Image
                       src={post.coverImage}
                       alt={post.title}
@@ -45,7 +45,7 @@ export default function BlogPage() {
                     />
                   </Link>
                 ) : (
-                  <div className="h-44 bg-gradient-to-br from-brand-800 to-brand-600 flex items-center justify-center">
+                  <div className="h-56 bg-gradient-to-br from-brand-800 to-brand-600 flex items-center justify-center">
                   </div>
                 )}
                 <div className="flex flex-col flex-1 p-6">
