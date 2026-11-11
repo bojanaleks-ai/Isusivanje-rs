@@ -25,7 +25,7 @@ export default function Footer() {
               <a href="mailto:isusivanje.rs@gmail.com" className="hover:text-white transition-colors">
                 ✉️ isusivanje.rs@gmail.com
               </a>
-              <span>📍 Beograd - Savski Venac</span>
+              <span>📍 Savski venac, Beograd, Srbija</span>
             </div>
           </div>
 
