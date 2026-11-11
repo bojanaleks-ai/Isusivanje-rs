@@ -60,8 +60,7 @@ const prednosti = [
 
 const koraci = [
   { k: '1', t: 'Izvlačenje vode', d: 'Usisivačima za vodu uklanjamo vodu sa podova i iz svih udubljenja.' },
-  { k: '2', t: 'Merenje vlage', d: 'Merimo koliko je vlage ostalo u podu i zidovima i besplatno procenjujemo posao.' },
-  { k: '3', t: 'Isušivanje', d: 'Postavljamo profesionalne Trotec isušivače koji izvlače preostalu vlagu iz konstrukcije.' },
+  { k: '2', t: 'Isušivanje', d: 'Postavljamo profesionalne Trotec isušivače koji izvlače preostalu vlagu iz konstrukcije.' },
 ]
 
 const pitanja = [
@@ -177,7 +176,7 @@ export default function UsisivaciZaVoduPage() {
       <section className="bg-brand-900 py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl font-black text-white mb-10">Od vode do suvog prostora</h2>
-          <ol className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <ol className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {koraci.map((s) => (
               <li key={s.k} className="flex gap-4">
                 <span className="w-10 h-10 rounded-full bg-cyan-400 text-black font-black flex items-center justify-center flex-shrink-0">
