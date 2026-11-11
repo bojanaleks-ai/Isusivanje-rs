@@ -14,6 +14,7 @@ const uslugeSeo = [
   { naslov: 'Isušivanje zidova', opis: 'rešavamo vlagu u zidovima koja izaziva buđ i ljuštenje boje' },
   { naslov: 'Isušivanje posle curenja vode i pucanja cevi', opis: 'delujemo odmah, pre nego što voda napravi veću štetu' },
   { naslov: 'Isušivanje podruma i garaža', opis: 'trajno uklanjamo vlagu iz podzemnih prostorija' },
+  { naslov: 'Izvlačenje vlage iz teško dostupnih mesta', opis: 'lift postrojenja i liftovska okna, elektro sobe i elektro ormani, šahtovi, otvori i jame za auto liftove, gde vlaga i voda mogu da oštete opremu' },
   { naslov: 'Isušivanje košuljice i estriha', opis: 'ubrzavamo sušenje kako biste ranije postavili parket ili pločice' },
   { naslov: 'Kondenzacija i buđ', opis: 'smanjujemo vlažnost vazduha i sprečavamo da se buđ vrati' },
   { naslov: 'Industrijsko i građevinsko isušivanje', opis: 'za gradilišta, magacine i poslovne prostore' },
