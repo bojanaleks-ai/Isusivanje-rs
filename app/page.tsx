@@ -178,7 +178,7 @@ export default function HomePage() {
               <p className="text-cyan-400 text-sm font-bold uppercase tracking-widest mb-4">
                 Profesionalni servis za isušivanje
               </p>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-none mb-4">
+              <h1 className="text-[clamp(1.75rem,10vw,3rem)] sm:text-6xl lg:text-7xl font-black leading-none mb-4">
                 <span className="block text-white">PROFESIONALNO</span>
                 <span className="block text-cyan-400">ISUŠIVANJE.rs</span>
                 <span className="block text-white">VLAGE</span>
@@ -312,7 +312,7 @@ export default function HomePage() {
       {/* Prednosti strip */}
       <section className="bg-brand-800 border-y border-brand-700 py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 sm:gap-8">
             {prednosti.map((p) => (
               <div key={p.title} className="flex flex-col items-center text-center gap-3">
                 <div>{p.icon}</div>
