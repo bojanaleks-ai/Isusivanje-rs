@@ -46,7 +46,7 @@ export async function getPostBySlug(slug: string): Promise<Post> {
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
-  const processedContent = await remark().use(html).process(content)
+  const processedContent = await remark().use(html, { sanitize: false }).process(content)
   const contentHtml = processedContent.toString()
 
   return {

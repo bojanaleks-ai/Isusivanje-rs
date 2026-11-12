@@ -53,6 +53,26 @@
     @apply font-semibold text-brand-950;
   }
 
+  .prose-content .table-wrap {
+    @apply my-6 overflow-x-auto rounded-lg border border-brand-200;
+  }
+
+  .prose-content table {
+    @apply w-full min-w-[32rem] border-collapse text-left text-sm text-brand-800;
+  }
+
+  .prose-content th {
+    @apply bg-brand-900 px-4 py-3 font-semibold text-white;
+  }
+
+  .prose-content td {
+    @apply border-t border-brand-200 px-4 py-3 align-top;
+  }
+
+  .prose-content tbody tr:nth-child(even) {
+    @apply bg-brand-50;
+  }
+
   .prose-content a {
     @apply font-semibold text-cyan-700 underline hover:text-cyan-900;
   }
