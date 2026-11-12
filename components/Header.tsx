@@ -9,7 +9,7 @@ type NavItem = NavLink | { label: string; children: NavLink[] }
 
 // Oprema: 4 stavke spojene u jedan padajući meni
 const opremaLinks: NavLink[] = [
-  { href: '/trotek-oprema', label: 'Trotek oprema' },
+  { href: '/trotek-oprema', label: 'Isušivači vlage' },
   { href: '/termalne-kamere', label: 'Termalne kamere' },
   { href: '/ozonizator', label: 'Ozonizator' },
   { href: '/usisivaci-za-vodu', label: 'Usisivači za vodu' },
