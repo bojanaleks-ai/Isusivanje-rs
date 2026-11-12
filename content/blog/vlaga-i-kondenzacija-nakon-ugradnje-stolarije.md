@@ -2,7 +2,7 @@
 title: "Vlaga i kondenzacija nakon ugradnje stolarije: Kako nastaje i kako je trajno ukloniti?"
 date: "2026-11-05"
 excerpt: "Nova PVC ili ALU stolarija odlično dihtuje, pa se vlaga zadržava u prostoru i taloži na staklima, okvirima i hladnim zidovima. Saznajte zašto nastaje kondenzacija i kako da je trajno uklonite pre nego što se pojavi buđ."
-coverImage: "/images/blog-kondenzacija-prozor-budj.jpg"
+coverImage: "/images/blog-kondenzacija-krovni-prozor.jpg"
 tags: ["kondenzacija", "stolarija", "buđ"]
 ---
 
