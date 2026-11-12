@@ -2,7 +2,7 @@
 title: "Kako trajno ukloniti vlagu iz podruma, magacina i garaže: Vodič za profesionalno mašinsko isušivanje vlage"
 date: "2026-11-04"
 excerpt: "Provetravanje i grejanje rešavaju vlagu samo površinski. Saznajte zašto nastaje vlaga u podrumima, magacinima i garažama, kakve su posledice i kako industrijski odvlaživači izvlače vlagu iz betona, cigle i maltera."
-coverImage: "/images/blog-vlazan-podrum-cigla.jpg"
+coverImage: "/images/blog-podrum-cigla-salitra.jpg"
 tags: ["podrum", "magacin", "garaža"]
 ---
 
