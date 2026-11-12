@@ -28,7 +28,18 @@ export default function BlogPage() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map((post) => (
+            {posts.map((post) =>
+              !post.title ? (
+                // Prazno mesto za budući članak
+                <article
+                  key={post.slug}
+                  aria-hidden="true"
+                  className="flex flex-col rounded-2xl border border-brand-100 overflow-hidden shadow-sm min-h-[24rem]"
+                >
+                  <div className="h-56 bg-gradient-to-br from-brand-800 to-brand-600" />
+                  <div className="flex-1" />
+                </article>
+              ) : (
               <article
                 key={post.slug}
                 className="group flex flex-col rounded-2xl border border-brand-100 overflow-hidden shadow-sm hover:shadow-lg hover:border-brand-300 transition-all duration-300"
@@ -78,7 +89,8 @@ export default function BlogPage() {
                   </div>
                 </div>
               </article>
-            ))}
+              )
+            )}
           </div>
         </div>
       </section>

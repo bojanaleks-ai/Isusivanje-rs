@@ -35,6 +35,7 @@ export default async function BlogPostPage({ params }: Props) {
   } catch {
     notFound()
   }
+  if (!post.title) notFound()
 
   const articleSchema = {
     '@context': 'https://schema.org',

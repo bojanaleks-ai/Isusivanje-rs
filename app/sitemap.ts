@@ -1,9 +1,12 @@
 import { MetadataRoute } from 'next'
-import { getAllSlugs } from '@/lib/blog'
+import { getSortedPostsMeta } from '@/lib/blog'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://isusivanje.rs'
-  const slugs = getAllSlugs()
+  // Prazna mesta (članci bez naslova) ne idu u sitemap
+  const slugs = getSortedPostsMeta()
+    .filter((p) => p.title)
+    .map((p) => p.slug)
 
   const blogUrls = slugs.map((slug) => ({
     url: `${baseUrl}/blog/${slug}`,
