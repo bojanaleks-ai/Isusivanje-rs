@@ -7,9 +7,8 @@ import { useEffect, useRef, useState } from 'react'
 type NavLink = { href: string; label: string }
 type NavItem = NavLink | { label: string; children: NavLink[] }
 
-// Oprema: 4 stavke spojene u jedan padajući meni
+// Oprema: padajući meni
 const opremaLinks: NavLink[] = [
-  { href: '/trotek-oprema', label: 'Isušivači vlage' },
   { href: '/termalne-kamere', label: 'Termalne kamere' },
   { href: '/ozonizator', label: 'Ozonizator' },
   { href: '/usisivaci-za-vodu', label: 'Usisivači za vodu' },
@@ -17,6 +16,7 @@ const opremaLinks: NavLink[] = [
 
 const navItems: NavItem[] = [
   { href: '/#usluge', label: 'Usluge' },
+  { href: '/trotek-oprema', label: 'Isušivači vlage' },
   { label: 'Oprema', children: opremaLinks },
   { href: '/galerija', label: 'Galerija' },
   { href: '/blog', label: 'Blog' },
