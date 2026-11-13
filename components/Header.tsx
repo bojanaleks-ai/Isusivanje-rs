@@ -205,7 +205,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-brand-800 border-t border-brand-700">
+        <div className="lg:hidden bg-brand-800 border-t border-brand-700 max-h-[calc(100dvh-4rem)] overflow-y-auto overscroll-contain">
           <nav className="mx-auto max-w-7xl px-4 py-4 flex flex-col gap-1">
             {[...navItems, { href: '/kontakt', label: 'Kontakt' }].map((item) =>
               'children' in item ? (
