@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Trotek oprema',
+  title: 'Isušivači vlage',
   description:
     'Profesionalna Trotec oprema kojom radimo: industrijski odvlaživači TTK 400, TTK 500 i TTK 570 ECO, turbo fan TFV 30 S, električni kalorifer TDS 20 i produžni kablovi.',
 }
