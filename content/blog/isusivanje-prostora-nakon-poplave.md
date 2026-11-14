@@ -52,4 +52,4 @@ Grejanje zagreva vazduh, ali ne odvodi vlagu iz prostorije, već je samo drži u
 
 ## Imate problem sa vodom, poplavom ili vlagom u objektu?
 
-Pogledajte našu ponudu [profesionalnih isušivača vlage](/trotek-oprema) i rešite problem brzo i efikasno. [Kontaktirajte nas](/kontakt) ili pozovite **062 355 345** za besplatnu procenu. Dolazimo na teren u Beogradu i celoj Srbiji.
+Pogledajte našu ponudu [profesionalnih isušivača vlage](/trotek-oprema) i rešite problem brzo i efikasno. [Kontaktirajte nas](/kontakt) ili pozovite [**062 355 345**](tel:+38162355345) za besplatnu procenu. Dolazimo na teren u Beogradu i celoj Srbiji.

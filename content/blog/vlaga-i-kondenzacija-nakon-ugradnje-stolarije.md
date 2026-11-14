@@ -52,4 +52,4 @@ U tim situacijama, upotreba profesionalnih [kondenzacionih odvlaživača vlage](
 
 ## Imate problem sa kondenzacijom i buđi?
 
-[Kontaktirajte nas](/kontakt) ili pozovite **062 355 345** za besplatnu procenu. Dolazimo na teren u Beogradu i celoj Srbiji.
+[Kontaktirajte nas](/kontakt) ili pozovite [**062 355 345**](tel:+38162355345) za besplatnu procenu. Dolazimo na teren u Beogradu i celoj Srbiji.

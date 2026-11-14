@@ -102,4 +102,4 @@ Vlaga u podrumu, garaži ili magacinu nikada ne nestaje sama od sebe. Što duže
 
 Bilo da vam je potrebno hitno isušivanje nakon poplave i pucanja cevi, sušenje košuljice tokom adaptacije ili iznajmljivanje Trotec mašina za odvlaživanje magacina, profesionalni pristup garantuje brz i bezbedan povratak prostora u funkciju.
 
-[Kontaktirajte nas](/kontakt) ili pozovite **062 355 345** za besplatnu procenu. Dolazimo na teren u Beogradu i celoj Srbiji.
+[Kontaktirajte nas](/kontakt) ili pozovite [**062 355 345**](tel:+38162355345) za besplatnu procenu. Dolazimo na teren u Beogradu i celoj Srbiji.

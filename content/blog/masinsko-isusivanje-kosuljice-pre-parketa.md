@@ -38,4 +38,4 @@ Cena zavisi od kvadrature objekta, početne vlažnosti i broja potrebnih mašina
 
 ## Planirate postavljanje parketa u novogradnji?
 
-[Kontaktirajte nas](/kontakt) ili pozovite **062 355 345** za mašinsko isušivanje košuljice i budite sigurni da će vaš pod biti postavljen na potpuno suvu i stabilnu podlogu. Dolazimo na teren u Beogradu i celoj Srbiji.
+[Kontaktirajte nas](/kontakt) ili pozovite [**062 355 345**](tel:+38162355345) za mašinsko isušivanje košuljice i budite sigurni da će vaš pod biti postavljen na potpuno suvu i stabilnu podlogu. Dolazimo na teren u Beogradu i celoj Srbiji.

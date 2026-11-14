@@ -102,7 +102,7 @@ export default function BlogPage() {
           <p className="text-brand-600 mb-6">Naš tim je dostupan 24/7 — pozovite odmah ili pošaljite upit.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+38162355345" className="btn-primary">📞 Pozovite nas</a>
-            <Link href="/kontakt" className="btn-blue">Pošaljite upit</Link>
+            <a href="mailto:isusivanje.rs@gmail.com" className="btn-blue">Pošaljite upit</a>
           </div>
         </div>
       </section>
