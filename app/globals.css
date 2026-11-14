@@ -21,6 +21,10 @@
     @apply inline-flex items-center justify-center rounded-md bg-accent-500 px-6 py-3 text-sm font-bold text-black shadow-sm transition-colors hover:bg-accent-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-500 uppercase tracking-wider;
   }
 
+  .btn-blue {
+    @apply inline-flex items-center justify-center rounded-md bg-cyan-400 px-6 py-3 text-sm font-bold text-black shadow-sm transition-colors hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-400 uppercase tracking-wider;
+  }
+
   .btn-outline {
     @apply inline-flex items-center justify-center rounded-md border-2 border-white px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white uppercase tracking-wider;
   }

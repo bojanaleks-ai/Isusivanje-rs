@@ -98,7 +98,7 @@ export default async function BlogPostPage({ params }: Props) {
           <p className="text-brand-600 mb-6">Kontaktirajte nas — naš tim je dostupan 24/7.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:+38162355345" className="btn-primary">📞 Pozovite odmah</a>
-            <Link href="/kontakt" className="btn-outline">Pošaljite upit</Link>
+            <Link href="/kontakt" className="btn-blue">Pošaljite upit</Link>
           </div>
         </div>
       </section>
