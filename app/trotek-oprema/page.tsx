@@ -36,7 +36,7 @@ const grupe: { naslov: string; opis: string; stavke: Stavka[] }[] = [
         naziv: 'TTK 570 ECO',
         podatak: '127 L/dan',
         opis: 'Naš najjači odvlaživač — za poplave, novogradnju, hale i magacine.',
-        img: '/images/ttk570.jpg',
+        img: '/images/ttk570-ostra.jpg',
       },
     ],
   },

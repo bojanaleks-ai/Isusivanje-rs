@@ -114,7 +114,7 @@ export default function ONamaPage() {
           </div>
           <div className="relative h-72 sm:h-96 rounded-xl overflow-hidden bg-white">
             <Image
-              src="/images/ttk570.jpg"
+              src="/images/ttk570-ostra.jpg"
               alt="Trotec TTK 570 ECO industrijski odvlaživač"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
