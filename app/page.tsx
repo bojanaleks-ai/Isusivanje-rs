@@ -186,7 +186,7 @@ export default function HomePage() {
               <p className="text-xl sm:text-2xl font-semibold text-brand-200 mb-4">
                 Brzo, Efikasno, Pouzdano
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col items-start sm:flex-row gap-4">
                 <a
                   href="tel:+38162355345"
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent-500 hover:bg-accent-400 text-black text-lg font-black uppercase tracking-wider rounded-md transition-colors shadow-lg"
