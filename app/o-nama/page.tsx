@@ -5,7 +5,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'O nama',
   description:
-    'Preko 12 godina iskustva, više od 35 Trotec industrijskih mašina i preko 1300 intervencija širom Srbije. Upoznajte tim koji rešava problem vlage.',
+    'Preko 12 godina iskustva, više od 35 Trotec industrijskih mašina i preko 1900 intervencija širom Srbije. Upoznajte tim koji rešava problem vlage.',
 }
 
 const TELEFON_PRIKAZ = '062 355 345'
@@ -13,7 +13,7 @@ const TELEFON_HREF = 'tel:+38162355345'
 
 const brojevi = [
   { broj: '12+', opis: 'godina iskustva' },
-  { broj: '1300+', opis: 'uspešnih intervencija' },
+  { broj: '1900+', opis: 'uspešnih intervencija' },
   { broj: '35+', opis: 'Trotec industrijskih mašina' },
   { broj: '0–24h', opis: 'hitni izlazak na teren' },
 ]
@@ -102,7 +102,7 @@ export default function ONamaPage() {
               </p>
               <p>
                 Danas raspolažemo sa više od 35 profesionalnih Trotec industrijskih odvlaživača i
-                iza nas je preko 1300 uspešno završenih intervencija: od poplavljenih podruma i
+                iza nas je preko 1900 uspešno završenih intervencija: od poplavljenih podruma i
                 stanova posle pucanja cevi, do hala i novogradnje kojima treba brzo sušenje estriha.
               </p>
               <p>

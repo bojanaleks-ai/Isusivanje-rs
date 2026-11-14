@@ -24,7 +24,7 @@ const zastoMi = [
   'Dolazak 24/7, i vikendom i praznikom',
   'Besplatna procena vlage i saveti šta je potrebno',
   'Profesionalne Trotec mašine, ne kućni odvlaživači',
-  'Više od 12 godina iskustva i 1300+ zadovoljnih klijenata',
+  'Više od 12 godina iskustva i 1900+ zadovoljnih klijenata',
   'Radimo u Beogradu i u celoj Srbiji',
 ]
 
@@ -104,8 +104,8 @@ const prednosti = [
         <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
       </svg>
     ),
-    title: 'Preko 1300 zadovoljnih klijenata',
-    desc: 'Više od 1300 stambenih i poslovnih objekata uspešno saniranih — pouzdanost potvrđena iskustvom.',
+    title: 'Preko 1900 zadovoljnih klijenata',
+    desc: 'Više od 1900 stambenih i poslovnih objekata uspešno saniranih — pouzdanost potvrđena iskustvom.',
   },
 ]
 
@@ -254,7 +254,7 @@ export default function HomePage() {
             Poplava, pukla cev ili vlaga u zidovima? Brzo isušivanje sprečava buđ, neprijatan miris
             i skupe popravke. Imamo više od 12 godina iskustva i preko 35 profesionalnih isušivača
             Trotec, a izlazimo na teren 24 sata dnevno, 7 dana u nedelji. Do sada smo pomogli u više
-            od 1300 intervencija u stanovima, kućama, lokalima i na gradilištima.
+            od 1900 intervencija u stanovima, kućama, lokalima i na gradilištima.
           </p>
 
           <h3 className="text-xl sm:text-2xl font-black text-white mb-4">Iznajmljivanje isušivača vlage</h3>
@@ -362,7 +362,7 @@ export default function HomePage() {
               {/* Stats */}
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { label: 'Više od', value: '1300+', sub: 'intervencija' },
+                  { label: 'Više od', value: '1900+', sub: 'intervencija' },
                   { label: '', value: 'Besplatna', sub: 'procena' },
                 ].map((s) => (
                   <div key={s.sub} className="bg-brand-800 border border-brand-700 rounded-xl p-4 text-center">
