@@ -44,7 +44,7 @@ Zahvaljujući zatvorenom ciklusu rada mašina, vlažnost vazduha u prostoriji se
 
 ### Koliko traje isušivanje prostora nakon poplave?
 
-Trajanje zavisi od količine vode i kvadrature, ali u proseku proces mašinskog isušivanja traje između 3 i 7 dana.
+Trajanje zavisi od količine vode, kvadrature i vrste materijala. Mašinsko isušivanje je uvek višestruko brže od prirodnog sušenja.
 
 ### Da li je dovoljno samo uključiti grejanje?
 
