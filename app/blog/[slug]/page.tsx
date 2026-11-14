@@ -83,13 +83,10 @@ export default async function BlogPostPage({ params }: Props) {
           />
 
           {/* Back link */}
-          <div className="mt-12 pt-8 border-t border-brand-100 flex items-center justify-between flex-wrap gap-4">
+          <div className="mt-12 pt-8 border-t border-brand-100">
             <Link href="/blog" className="text-brand-600 font-semibold hover:text-brand-800 transition-colors">
               ← Svi blog postovi
             </Link>
-            <a href="tel:+38162355345" className="btn-primary">
-              📞 Pozovite nas
-            </a>
           </div>
         </div>
       </article>
